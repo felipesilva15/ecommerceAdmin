@@ -12,8 +12,6 @@ $app->get('/', function() {
 	$data = $sql->select('SELECT * FROM TB_USERS');
 
 	echo(json_encode($data));
-
-
 });
 
 $app->run();
